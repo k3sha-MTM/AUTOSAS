@@ -33,6 +33,34 @@ function App() {
             <h2>Контроль пробігу</h2>
             <h5>Ми принципово не приймаємо у продаж автомобіль, якщо є підтвердження, що пробіг коригувався</h5>
             </div>
+
+        </div>
+        <h1>Вас може зацікавить</h1>
+        <div class="cards-in-main-container">
+          <div class="cards">
+            <img src="https://gamerwall.pro/uploads/posts/2022-02/1645930457_6-gamerwall-pro-p-volshebnaya-mashina-krasivie-oboi-6.jpg" class="cardsImg"></img>
+            <span>Волшебная машина</span>
+            <span>1 470 300 grn</span>
+            <a href="" class="detal">Детальніше</a>
+          </div>
+          <div class="cards">
+            <img src="https://phonoteka.org/uploads/posts/2021-07/1625490426_21-phonoteka-org-p-neonovie-mashini-na-rabochii-stol-krasivo-21.jpg" class="cardsImg"></img>
+            <span>Волшебная машина</span>
+            <span>1 470 300 grn</span>
+            <a href="" class="detal">Детальніше</a>
+          </div>
+          <div class="cards">
+            <img src="https://phonoteka.org/uploads/posts/2021-07/1625490366_34-phonoteka-org-p-neonovie-mashini-na-rabochii-stol-krasivo-34.jpg" class="cardsImg"></img>
+            <span>Волшебная машина</span>
+            <span>1 470 300 grn</span>
+            <a href="" class="detal">Детальніше</a>
+          </div>
+          <div class="cards">
+            <img src="https://phonoteka.org/uploads/posts/2021-07/1625490426_21-phonoteka-org-p-neonovie-mashini-na-rabochii-stol-krasivo-21.jpg" class="cardsImg"></img>
+            <span>Волшебная машина</span>
+            <span>1 470 300 grn</span>
+            <a href="" class="detal">Детальніше</a>
+          </div>
         </div>
       </header>
     </div>

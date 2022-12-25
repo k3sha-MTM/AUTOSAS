@@ -1,8 +1,13 @@
 const express=require ('express');
 const app= express();
+const mongoose = require("mongoose");
 app.listen(3000,()=>{console.log("Gavno rabotaet")});
 const PORT = process.env.PORT || 3001;
-
+const userRouter = require("./routes/UserRouter.js");
+const carRouter = require("./routes/CarRouter.js");
+app.use(userRouter);
+app.use(carRouter);
+app.use(express.json());
 app.listen(PORT, () =>
 {
     console.log(`SERVER START ${PORT}`);

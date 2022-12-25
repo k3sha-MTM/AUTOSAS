@@ -5,8 +5,8 @@
     user-select: none;
 }
 .form{
-    width: 80%;
-    display: flex;
+    width: 95%;
+    
     flex-direction: column;
     align-items: center;
 }
@@ -16,7 +16,8 @@
 .fields{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 20%; 
+    color: aliceblue;
 }
 #person-img{
     width: 3%;
@@ -32,9 +33,10 @@
 h1{
     padding: 0;
     margin: 0;
+    color: antiquewhite;
 }
 input{
     width:auto;
-    height: 4vh;
+    height: 2vh;
     outline:none;
 }

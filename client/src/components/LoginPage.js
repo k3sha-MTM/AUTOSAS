@@ -43,20 +43,20 @@ function LoginApp() {
       <div className="form">
         
         
-        <h1 >Вхід в особистий кабінет</h1>
+        <h1 >Вхід</h1>
         <span id="info" >
-          Для входу в кабінет введіть ел. пошту або телефон
+        Введіть електронну пошту
       
         </span>
         <div className="fields">
-          <label className="text">Телефон або ел. пошта</label>
+          <label className="text">Електронну пошта</label>
           <input type="text" id="userlog"></input>
           <label className="text">Пароль</label>
           <input type="password" id="password-log"></input>
         </div>
 
         {/* <Link class="link" to="/" draggable="false"> */}
-        <button id="login-btn" onClick={LogIn}>
+        <button id="login-btn"  onClick={LogIn}>
           УВІЙТИ
         </button>
         {/* </Link> */}

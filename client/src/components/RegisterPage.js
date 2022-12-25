@@ -44,13 +44,7 @@ function RegisterApp() {
   return (
     <div className="page">
       <div className="form">
-        <Link id="close-img" to="/" draggable="false">
-        </Link>
-        <img
-          id="person-img"
-          alt="not found"
-          draggable="false"
-        ></img>
+        
         <h1>Реєстрація</h1>
         <div className="fields">
           <label className="form-label">Ім'я</label>
@@ -59,20 +53,15 @@ function RegisterApp() {
           <input type="text" id="user-surname"></input>
           <label className="form-label">По батькові</label>
           <input type="text" id="user-patronymic"></input>
-          <label className="form-label">Ел. пошта</label>
+          <label className="form-label">Електронна пошта</label>
           <input type="email" id="user-email"></input>
           <label className="form-label">Телефон</label>
           <PhoneInput value={phone} onChange={handleInput}></PhoneInput>
           <label className="form-label">Пароль</label>
           <input type="password" id="user-password"></input>
         </div>
-
-        <button id="register-btn" onClick={Register}>
-          ЗАРЕЄСТРУВАТИСЯ
-        </button>
-        <Link class="link" to="/login" draggable="false">
-          Вже зареєструвалися?
-        </Link>
+        <a href="http://localhost:3002" class="gradient-button-autor" >ЗАРЕЄСТРУВАТИСЯ</a>
+        
       </div>
     </div>
   );
@@ -80,7 +69,7 @@ function RegisterApp() {
 function PhoneInput(props) {
   return (
     <InputMask
-      mask="+38(099)999-99-99"
+      mask="+38(00)100-11-90"
       value={props.value}
       onChange={props.onChange}
     ></InputMask>

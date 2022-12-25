@@ -61,6 +61,47 @@
 .gradient-button-buy:hover {
   background-position: right center;
 }
+.gradient-button-autor {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+ 
+}
+.gradient-button-autor:hover {
+  background-position: right center;
+}
+
+.gradient-button-go {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+ 
+}
+.gradient-button-go:hover {
+  background-position: right center;
+}
+
+
 
 .gradient-button-sell {
   text-decoration: none;
@@ -133,6 +174,13 @@
     margin-left: 500px;
     
 }
+.text1{
+  font-size: large;
+ 
+}
+.text2{
+  font-size: large;
+}
 .cards{
   display: flex;
   flex-direction:column;
@@ -143,6 +191,9 @@
  }
  .cardsImg{
   width: 350px;
+ }
+ .cardImg{
+  width: 150px;
  }
  .detal{
   font-size: 12px;
@@ -157,4 +208,28 @@
   text-transform: uppercase;
   font-weight: bold;
 
+ }
+ .text-container{
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+    width: 90%;
+    padding: 20px;
+ }
+ .box-text{
+  display: flex;
+  flex-direction:column;
+  border-radius: 5px;
+  border-color:aliceblue 2px;
+  font-size:x-large;
+  margin-left: 50px;
+ }
+ .footer{
+  background-color:#4830F0;
+ }
+ .foter-container{
+  font-size: xx-large;
+  display: flex;
+  text-align: end;
+  margin-left: 20%;
  }

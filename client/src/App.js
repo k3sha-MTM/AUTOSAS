@@ -4,7 +4,23 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      
+        <img src="./images/nidi.png"></img>
       <header className="App-header">
+      <a href="" class="gradient-button-autor">Регистрация</a>
+      <a href="" class="gradient-button-go">Войти</a>
+        <div class="header">
+          <div class="text1">
+          +38 (044) 503-33-53
+          Замовити дзвінок
+          </div>
+          <hr></hr>
+          <div class="text2">
+          вул.Велика Кільцева, 58
+          Карта проїзду
+          </div>
+          <hr></hr>
+        </div>
         <div class="colorRect">
         <a href="" class="gradient-button-buy">Купити</a>
         <a href="" class="gradient-button-sell">Продати</a>
@@ -35,7 +51,7 @@ function App() {
             </div>
 
         </div>
-        <h1>Вас може зацікавить</h1>
+        <h1>Вас може зацікавить:</h1>
         <div class="cards-in-main-container">
           <div class="cards">
             <img src="https://gamerwall.pro/uploads/posts/2022-02/1645930457_6-gamerwall-pro-p-volshebnaya-mashina-krasivie-oboi-6.jpg" class="cardsImg"></img>
@@ -62,7 +78,37 @@ function App() {
             <a href="" class="detal">Детальніше</a>
           </div>
         </div>
+        <div class="text-container">
+          <div class="box-text">
+            <h5>Викуп автомобиля</h5>
+            <span>Найпростіший і швидкий спосіб продати автомобіль.</span>
+          </div>
+          <div class="box-text">
+            <h5>Трейд-ін</h5>
+            <span>Швидкий і зручний спосіб обміняти свій автомобіль на новий.</span>
+          </div>
+          <div class="box-text">
+            <h5>Кредит</h5>
+            <span>Розрахуємо і підберемо кредит на найбільш вигідних умовах.</span>
+          </div>
+          
+        </div>
       </header>
+      <footer class="footer">
+        <div class="foter-container">
+        ВІДІ Автомобілі з пробігом
+        
+        +38 (044) 503-33-53
+        sales.automarket@vidi.ua
+        <h3>Пн - Пт з 08:30 до 18:00
+        <hr></hr>
+Сб - Нд з 08:30 до 18:00</h3>
+        <hr></hr>
+<h4>вул.Велика Кільцева, 58</h4>
+        </div>
+       
+  
+</footer>
     </div>
   );
 }

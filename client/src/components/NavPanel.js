@@ -47,7 +47,6 @@ function NavPanelApp() {
         <h4>Автомобілі з пробігом</h4>
         <Link id="account-btn" to={navigate}>
           <div id="person-img-acc">
-            <img src={person} alt="not found" draggable="false"></img>
             <span id="text-btn-acc"></span>
           </div>
         </Link>

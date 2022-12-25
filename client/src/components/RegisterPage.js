@@ -46,11 +46,9 @@ function RegisterApp() {
     <div className="page">
       <div className="form">
         <Link id="close-img" to="/" draggable="false">
-          <img src={close} alt="not found" draggable="false"></img>
         </Link>
         <img
           id="person-img"
-          src={person}
           alt="not found"
           draggable="false"
         ></img>

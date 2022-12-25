@@ -1,6 +1,5 @@
 import "../css/Log.css";
-import person from "../source/person-outline.svg";
-import close from "../source/close-outline.svg";
+
 import { Link } from "react-router-dom";
 import React from "react";
 import { createBrowserHistory } from "history";
@@ -43,11 +42,9 @@ function LoginApp() {
     <div className="page">
       <div className="form">
         <Link id="close-img" to="/" draggable="false">
-          <img src={close} alt="not found" draggable="false"></img>
         </Link>
         <img
           id="person-img"
-          src={person}
           alt="not found"
           draggable="false"
         ></img>

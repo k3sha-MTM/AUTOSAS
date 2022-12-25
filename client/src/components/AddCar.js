@@ -1,6 +1,6 @@
 import "../css/Add.css";
 import { Link } from "react-router-dom";
-import close from "../source/close-outline.svg";
+
 import React from "react";
 import { createBrowserHistory } from "history";
 
@@ -52,7 +52,6 @@ function AddCarApp() {
     <div className="page">
       <div className="form">
         <Link id="close-img" to="/" draggable="false">
-          <img src={close} alt="not found" draggable="false"></img>
         </Link>
         <h1>Додати машину</h1>
         <div className="add-fields">

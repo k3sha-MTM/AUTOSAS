@@ -4,9 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
-        <img src="./images/nidi.png"></img>
       <header className="App-header">
+      <img src="/client/src/images/nidi.png"></img>
       <a href="" class="gradient-button-autor">Регистрация</a>
       <a href="" class="gradient-button-go">Войти</a>
         <div class="header">
@@ -96,7 +95,7 @@ function App() {
       </header>
       <footer class="footer">
         <div class="foter-container">
-        ВІДІ Автомобілі з пробігом
+        NІДІ Автомобілі з пробігом
         
         +38 (044) 503-33-53
         sales.automarket@vidi.ua
@@ -105,12 +104,9 @@ function App() {
 Сб - Нд з 08:30 до 18:00</h3>
         <hr></hr>
 <h4>вул.Велика Кільцева, 58</h4>
-        </div>
-       
-  
+        </div> 
 </footer>
     </div>
   );
 }
-
 export default App;

@@ -41,23 +41,17 @@ function LoginApp() {
   return (
     <div className="page">
       <div className="form">
-        <Link id="close-img" to="/" draggable="false">
-        </Link>
-        <img
-          id="person-img"
-          alt="not found"
-          draggable="false"
-        ></img>
-        <h1>Вхід в особистий кабінет</h1>
-        <span id="info">
+        
+        
+        <h1 >Вхід в особистий кабінет</h1>
+        <span id="info" >
           Для входу в кабінет введіть ел. пошту або телефон
-          <br />
-          та отримайте код авторизації.
+      
         </span>
         <div className="fields">
-          <label>Телефон або ел. пошта</label>
+          <label className="text">Телефон або ел. пошта</label>
           <input type="text" id="userlog"></input>
-          <label className="form-label">Пароль</label>
+          <label className="text">Пароль</label>
           <input type="password" id="password-log"></input>
         </div>
 

@@ -1,35 +1,51 @@
-#login-btn{
-    width: 20%;
-    height: 5vh;;
-    border: none;
+
+.page{
+    background-color: #282c34;
+}
+#login-btn {
+    text-decoration: none;
+    display: inline-block;
     color: white;
-    margin-top: 10%;
-    font-weight: bold;
-    font-size: 1vw;
-    background-color: rgb(184, 35, 35);
-}
-#login-btn:hover{
-    background-color: white;
-    border: 1px solid rgb(184, 35, 35);
-    color: rgb(184, 35, 35);
-}
-#reg-btn{
-    width: 100%;
-    height: 5vh;;
-    border: none;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+   
+  }
+  #login-btn:hover {
+    background-position: right center;
+  }
+  
+  #reg-btn {
+    text-decoration: none;
+    display: inline-block;
     color: white;
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: 1vw;
-    background-color: white;
-    border: 1px solid rgb(134, 134, 134);
-    color: rgb(134, 134, 134);
-}
-#reg-btn:hover{
-    background-color: rgb(134, 134, 134);
-    color: rgba(255, 255, 255);
-}
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+   
+  }
+  #reg-btn:hover {
+    background-position: right center;
+  }
 #info{
     margin-top: 3%;
     margin-bottom: 3%;
+    color: aliceblue;
+}
+.text{
+    color: aliceblue;
 }

@@ -1,9 +1,9 @@
 const CarModel = require("../models/CarModel");
 async function CarRouter(app){
 app.post('/api/addcar',async(req,res)=>{
-  
-    
+    console.log("12312312312123131231323123213123123213123123123");
     const {
+        
         name,
         image,
         price,
@@ -16,8 +16,9 @@ app.post('/api/addcar',async(req,res)=>{
         gearbox,
        
     } = req.body;
-      console.log(Brand);
 
+    
+    
     const car=new CarModel({
         name:name,
         image:image,

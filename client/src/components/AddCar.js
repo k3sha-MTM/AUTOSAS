@@ -4,7 +4,6 @@ import React from "react";
 import { createBrowserHistory } from "history";
 
 function AddCarApp() {
-
   function AddCar() {
     let year = document.getElementById("car-year");
     let brand = document.getElementById("car-brand");
@@ -12,20 +11,23 @@ function AddCarApp() {
     let fuel = document.getElementById("car-fuel");
     let drive_type = document.getElementById("car-drive");
     let gearbox = document.getElementById("car-gearbox");
+    console.log("123123123123123")
+    
+
     fetch("/api/addcar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: document.getElementById("car-name").value,
-        image: document.getElementById("car-image").value,
-        price: document.getElementById("car-price").value,
-        probig: document.getElementById("car-prob").value,
-        year: year.options[year.selectedIndex].text,
-        brand: brand.options[brand.selectedIndex].text,
-        body: body.options[body.selectedIndex].text,
-        fuel: fuel.options[fuel.selectedIndex].text,
-        drive_type: drive_type.options[drive_type.selectedIndex].text,
-        gearbox: gearbox.options[gearbox.selectedIndex].text,
+        name: document.getElementById("car-name")?.value,
+        image: document.getElementById("car-image")?.value,
+        price: document.getElementById("car-price")?.value,
+        probig: document.getElementById("car-probig")?.value,
+        year: year.options[year.selectedIndex]?.text,
+        brand: brand.options[brand.selectedIndex]?.text,
+        body: body.options[body.selectedIndex]?.text,
+        fuel: fuel.options[fuel.selectedIndex]?.text,
+        drive_type: drive_type.options[drive_type.selectedIndex]?.text,
+        gearbox: gearbox.options[gearbox.selectedIndex]?.text,
       }),
     })
       .then((res) => res.json())

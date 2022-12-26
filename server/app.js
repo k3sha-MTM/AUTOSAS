@@ -6,7 +6,11 @@ const mongoose = require('mongoose');
 // Connection URI
 const uri ="mongodb+srv://admin:RJQQzuw76uTOZoIa@cluster0.dphmrco.mongodb.net/test";
 // Create a new MongoClient
-app.use(express.json());
+app.use(
+  express.json({
+      type: ["application/json", "text/plain"],
+  })
+);
 async function run() {
   CarRouter(app);
   try {
@@ -16,8 +20,8 @@ async function run() {
        
     })
     mongoose.set('strictQuery', true);
-    app.listen(3001, () => {
-        console.log(`Server is working now on port ${3001}`);
+    app.listen(8080, () => {
+        console.log(`Server is working now on port ${8080}`);
     });
 }
 catch (e) {

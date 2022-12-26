@@ -3,8 +3,11 @@ import NavPanel from "./NavPanel";
 import Nidi from "../images/nidi.png";
 
 function HomeApp() {
+    
   return (
+    
     <div className="home-page">
+        
       <a href="http://localhost:3002/register" class="gradient-button-autor" >Регистрация</a>
       <a href="http://localhost:3002/login" class="gradient-button-go">Войти</a>
       

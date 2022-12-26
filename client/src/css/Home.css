@@ -165,8 +165,8 @@
   .text1{
     font-size: large;
     color: aliceblue;
-   
   }
+ 
   .text2{
     font-size: large;
     color: aliceblue;
@@ -197,6 +197,7 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
   
    }
    .text-container{
@@ -226,4 +227,13 @@
     margin-left: 20%;
     color: aliceblue;
    }
+   .imagess{
+    width: 10%;
+    display: flex;
+    
+   }
+   #span{
+    text-align: center;
+   }
+
   

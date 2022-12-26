@@ -1,14 +1,14 @@
 import "../css/Home.css";
 import NavPanel from "./NavPanel";
-
+import Nidi from "../images/nidi.png";
 
 function HomeApp() {
   return (
     <div className="home-page">
-        <img src=".client/src/image/nidi.png"></img>
       <a href="http://localhost:3002/register" class="gradient-button-autor" >Регистрация</a>
       <a href="http://localhost:3002/login" class="gradient-button-go">Войти</a>
       
+        <img src={Nidi} href="http://localhost:3002" class="imagess"></img>
       
     
       <div className="main-content">
@@ -27,7 +27,7 @@ function HomeApp() {
         </div>
         <div class="colorRect">
         <a href="" class="gradient-button-buy">Купити</a>
-        <a href="http://localhost:3002/sell" class="gradient-button-sell">Продати</a>
+        <a href="http://localhost:3002/sell" class="gradient-button-sell">Додати</a>
         <a href="" class="gradient-button-info">Інформація</a>
         </div>
         <img src="https://phonoteka.org/uploads/posts/2021-07/1625490383_6-phonoteka-org-p-neonovie-mashini-na-rabochii-stol-krasivo-6.jpg" class="IMAGE"></img>
@@ -56,7 +56,7 @@ function HomeApp() {
 </div>
 
 </div>
-<h1>Вас може зацікавить:</h1>
+<h1 class="text">Вас може зацікавить:</h1>
 
 <div class="cards-in-main-container">
           <div class="cards">
@@ -86,10 +86,10 @@ function HomeApp() {
         </div>
 
         <div class="text-container">
-          <div class="box-text"></div>
+          <div class="box-text">
         <h5>Викуп автомобиля</h5>
             <span>Найпростіший і швидкий спосіб продати автомобіль.</span>
-          </div>
+            </div>
           <div class="box-text">
             <h5>Трейд-ін</h5>
             <span>Швидкий і зручний спосіб обміняти свій автомобіль на новий.</span>
@@ -97,6 +97,7 @@ function HomeApp() {
           <div class="box-text">
             <h5>Кредит</h5>
             <span>Розрахуємо і підберемо кредит на найбільш вигідних умовах.</span>
+            </div>
           </div>
           
       

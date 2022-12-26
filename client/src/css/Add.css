@@ -26,8 +26,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
+    color: aliceblue;
 }
 .add-field{
     display: flex;
     flex-direction: column;
+    color: aliceblue;
 }

@@ -8,50 +8,43 @@ const token = require("../jwt");
 const validation = [
   check("username")
     .notEmpty()
-    .withMessage("Name cannot be empty!")
+    .withMessage("ПУСТОЙ!!!!!")
     .isLength({
       min: 2,
-      max: 30,
+      max: 20,
     })
-    .withMessage("Wrong name length"),
-
+    .withMessage("Коротко"),
   check("surname")
     .notEmpty()
-    .withMessage("Surname cannot be empty!")
+    .withMessage("ПУСТОЙ!!!!!")
     .isLength({
       min: 2,
-      max: 30,
+      max: 20,
     })
-    .withMessage("Wrong surname length"),
-
+    .withMessage("Коротко"),
   check("patronymic")
     .notEmpty()
-    .withMessage("Patronymic cannot be empty!")
+    .withMessage("ПУСТОЙ!!!!!")
     .isLength({
       min: 2,
-      max: 30,
+      max: 20,
     })
-    .withMessage("Wrong patronymic length"),
-
+    .withMessage("Коротко"),
   check("password")
     .notEmpty()
-    .withMessage("Password cannot be empty!")
+    .withMessage("ПУСТОЙ!!!!!")
     .isLength({
       min: 5,
-      max: 30,
+      max: 20,
     })
-    .withMessage("Wrong password length"),
-
+    .withMessage("Коротко"),
   check("email")
     .notEmpty()
-    .withMessage("Email cannot be empty!")
+    .withMessage("ПУСТОЙ!!!!!")
     .isEmail()
-    .withMessage("Wrong email!"),
-
-  check("phone").notEmpty().withMessage("Phone cannot be empty!"),
+    .withMessage("Коротко"),
+  check("phone").notEmpty().withMessage("ПУСТОЙ!!!!!"),
 ];
-
-//REGISTRATION
 userRouter.post("/api/register", validation, async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -82,7 +75,6 @@ userRouter.post("/api/register", validation, async (req, res) => {
   });
 });
 
-//LOGIN
 userRouter.post("/api/login", validation, async (req, res) => {
   const { userlog, password } = req.body;
   var user = await Users.User.findOne({
@@ -107,12 +99,10 @@ userRouter.post("/api/login", validation, async (req, res) => {
   }
 });
 
-//PROFILE
 userRouter.get("/api/profile", token.validateToken, (req, res) => {
   res.json({ isLogin: true });
 });
 
-//LOGOUT
 userRouter.get("/api/logout", token.validateToken, (req, res) => {
   const accessToken = req.cookies["access-token"];
   res.cookie("access-token", accessToken, {

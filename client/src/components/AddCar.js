@@ -1,25 +1,10 @@
 import "../css/Add.css";
 import { Link } from "react-router-dom";
-
 import React from "react";
 import { createBrowserHistory } from "history";
 
 function AddCarApp() {
-  const history = createBrowserHistory({ forceRefresh: true });
-  const dataFetchedRef = React.useRef(false);
-  React.useEffect(() => {
-    if (dataFetchedRef.current) return;
-    dataFetchedRef.current = true;
 
-    fetch("/api/profile")
-      .then((res) => res.json())
-      .then((data) => {
-        if (!data.isLogin) {
-          history.push("/login");
-          history.go();
-        }
-      });
-  }, []);
   function AddCar() {
     let year = document.getElementById("car-year");
     let brand = document.getElementById("car-brand");
@@ -27,7 +12,7 @@ function AddCarApp() {
     let fuel = document.getElementById("car-fuel");
     let drive_type = document.getElementById("car-drive");
     let gearbox = document.getElementById("car-gearbox");
-    fetch("/api/add", {
+    fetch("/api/addcar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -53,91 +38,75 @@ function AddCarApp() {
       <div className="form">
         <Link id="close-img" to="/" draggable="false">
         </Link>
-        <h1>Додати машину</h1>
+        <h1>Add Car</h1>
         <div className="add-fields">
-          {/*NAME*/}
           <div className="add-field">
-            <label>Назва</label>
+            <label>NAME</label>
             <input type="text" id="car-name"></input>
           </div>
-          {/*IMAGE*/}
           <div className="add-field">
-            <label>Посилання на фото</label>
+            <label>IMAGE</label>
             <input type="text" id="car-image"></input>
           </div>
-          {/*PRICE*/}
           <div className="add-field">
-            <label>Ціна $</label>
+            <label>PRICE $</label>
             <input type="number" id="car-price"></input>
           </div>
-
-          {/*PROBIG*/}
           <div className="add-field">
-            <label className="form-label">Пробіг</label>
+            <label className="form-label">PROBIG</label>
             <input type="number" id="car-prob"></input>
           </div>
-
-          {/*YEAR*/}
           <div className="add-field">
-            <label className="form-label">Рік</label>
+            <label className="form-label">YEAR</label>
             <select name="years" className="add-inp" id="car-year">
               <option selected disabled value="" hidden="hidden"></option>
               <option value="2022">2022</option>
               <option value="2021">2021</option>
+              <option value="2021">2020</option>
+              <option value="2021">2019</option>
             </select>
           </div>
-
-          {/*BRAND*/}
           <div className="add-field">
-            <label className="form-label">Марка</label>
+            <label className="form-label">BRAND</label>
             <select name="years" className="add-inp" id="car-brand">
               <option selected disabled value="" hidden="hidden"></option>
               <option value="Audi">Audi</option>
               <option value="BMW">BMW</option>
             </select>
           </div>
-
-          {/*BODY*/}
           <div className="add-field">
-            <label className="form-label">Тип Кузова</label>
+            <label className="form-label">TYPE BODY</label>
             <select name="years" className="add-inp" id="car-body">
               <option selected disabled value="" hidden="hidden"></option>
-              <option>Хетчбек</option>
-              <option>Седан</option>
+              <option>HitBack</option>
+              <option>Sedan</option>
             </select>
           </div>
-
-          {/*FUEL*/}
           <div className="add-field">
-            <label className="form-label">Тип Палива</label>
+            <label className="form-label">TYPE FUEL</label>
             <select name="years" className="add-inp" id="car-fuel">
               <option selected disabled value="" hidden="hidden"></option>
-              <option>Бензин</option>
-              <option>Дизель</option>
+              <option>Fuel</option>
+              <option>Diesel</option>
             </select>
           </div>
-
-          {/*TYPE OF DRIVE*/}
           <div className="add-field">
-            <label className="form-label">Тип Приводу</label>
+            <label className="form-label">TYPE OF DRIVE</label>
             <select name="years" className="add-inp" id="car-drive">
               <option selected disabled value="" hidden="hidden"></option>
-              <option>Передній</option>
-              <option>Задній</option>
+              <option>Front</option>
+              <option>Back</option>
             </select>
           </div>
-
-          {/*GEARBOX*/}
           <div className="add-field">
-            <label className="form-label">Тип КПП</label>
+            <label className="form-label">GEARBOX</label>
             <select name="years" className="add-inp" id="car-gearbox">
               <option selected disabled value="" hidden="hidden"></option>
-              <option>Автомат</option>
-              <option>Механічна</option>
+              <option>Auto</option>
+              <option>Mechanic</option>
             </select>
           </div>
         </div>
-
         <button id="add-btn" onClick={AddCar}>
           ДОДАТИ
         </button>

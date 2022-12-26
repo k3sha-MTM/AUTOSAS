@@ -42,9 +42,12 @@ function RegisterApp() {
       });
   }
   return (
+    
     <div className="page">
+        
       <div className="form">
         
+      
         <h1>Реєстрація</h1>
         <div className="fields">
           <label className="form-label">Ім'я</label>
